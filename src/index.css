@@ -1,13 +1,31 @@
+.main {
+    display: flex;
+    width: 240px;
+    height: 50px;
+    background-color: aqua;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background: url("images/planety-v-kosmose.jpg");
+    width: 100%;
+    height: 100vh;
+}
+h4 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+input {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+.placeholder {
+    color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+
+

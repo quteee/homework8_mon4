@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./index.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export default class Parent extends React.Component {
+
+  handleClick() {
+    console.log('')
+  }
+
+  render() {
+    return <div>
+      <Child label='Name' input type='text' placeholder='Anton' onCLick={this.handleClick}/>
+      <Child label='Email' input type='text' placeholder='antongg@gmail.com' onCLick={this.handleClick} />
+      <Child label='pass' input type='password' placeholder='anton1301' onCLick={this.handleClick} />
+      <Child label='Number' input type='number' placeholder='+996 555 38-71-03' onCLick={this.handleClick} />
     </div>
-  );
+
+  }
+}
+class Child extends React.Component {
+  render() {
+    return <div>
+      <div className='main'>
+        <h4>{this.props.label}</h4>
+        <input type={this.props.type}
+               placeholder={this.props.placeholder}/>
+
+      </div>
+    </div>
+  }
 }
 
-export default App;
+
